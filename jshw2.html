@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript HW 2</title>
+    <link href="style/jshw2.css" rel="stylesheet">
+    <!--從google拉圖示下來-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Form Check</legend>
+                <hr />
+                <label>帳號</label>
+                <!--  onblur 游標離開元素-->
+                <input type = "text" id = "account" size = "20" onblur = "checkAccount();" placeholder = "請輸入帳號" />
+                <span id="accountSpan"></span>
+                <hr />
+                <label>密碼</label>
+                <input type = "password" id = "password" size = "20" onblur = "checkPassword();"  placeholder = "請輸入密碼" />
+                <span id="passwordSpan"></span>  
+                <hr />
+                <label>日期</label>
+                <input type = "text" id = "date" size = "20" onblur = "checkDate();" placeholder = "請輸入日期(西元年/月/日)" />
+                <span id="dateSpan"></span>
+                <hr />
+            </fieldset>        
+        </form>
+    </div>
+    <script src = "script/jshw2.js"></script>
+</body>
+</html>
